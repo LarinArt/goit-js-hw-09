@@ -18,10 +18,8 @@ img {
 }
 
 .timer {
-  width: 320px;
-  background-color: #8f8989;
   display: flex;
-  margin: -25px -10px -10px -10px;
+  margin: -10px;
 }
 
 .field {
@@ -33,10 +31,10 @@ img {
 }
 
 .value {
-  margin: 0;
-    color: #eee;
-    text-shadow: 0 3px 3px #000000;
-    font-size: 50px;
+  margin-top: 20px;
+  color: #eee;
+  text-shadow: 0 3px 3px #000000;
+  font-size: 50px;
 
 }
 
@@ -45,3 +43,5 @@ img {
   font-size: smaller;
   font-weight: 900;
 }
+
+
