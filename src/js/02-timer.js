@@ -13,8 +13,6 @@ const refs = {
 }
 let intervalId = null;
 
-refs.startBtn.disabled = true;
-
 const options = {
   enableTime: true,
   time_24hr: true,
@@ -23,6 +21,7 @@ const options = {
   onClose(selectedDates) {
     const date = new Date();
     if (selectedDates[0].getTime() < date.getTime()) {
+      refs.startBtn.disabled = true;
       return Notiflix.Notify.warning("Please choose a date in the future");
     } else { refs.startBtn.disabled = false; };
   },

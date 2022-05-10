@@ -6,8 +6,6 @@ const refs = {
 }
 let timerId = null;
 
-refs.startBtn.disabled = false;
-
 refs.startBtn.addEventListener('click', () => {
     timerId = setInterval(() => getRandomHexColor(), 1000);
     refs.startBtn.disabled = true;
